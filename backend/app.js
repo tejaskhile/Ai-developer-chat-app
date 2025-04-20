@@ -5,6 +5,7 @@ import userRoutes from './routes/userRoutes.js';
 import projectRoutes from './routes/projectRoutes.js';
 import cookieParser from 'cookie-parser'; 
 import cors from 'cors';
+import aiRoutes from './routes/aiRoutes.js'
 
 connect();
 
@@ -19,6 +20,7 @@ app.use(cookieParser());
 
 app.use('/users', userRoutes);
 app.use('/projects', projectRoutes)
+app.use('/ai', aiRoutes)
 
 
 export default app; // Export the configured Express app

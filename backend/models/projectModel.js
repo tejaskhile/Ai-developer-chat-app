@@ -9,7 +9,7 @@ const projectSchema = new mongoose.Schema({
     },
     users: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'user',  // Match the model name used in userModel.js
+        ref: 'user',  
         required: true
     }]
 })
